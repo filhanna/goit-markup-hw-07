@@ -684,7 +684,7 @@ img {
 /* CSS PORTFOLIO*/
 /* Кнопки*/
 
-.btn-list {
+.btn__list {
   list-style-type: none;
   display: flex;
   gap: 8px;
@@ -694,7 +694,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-list .btn2 {
+.btn__list .btn__list-button {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -709,12 +709,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-list .btn2:hover,
-.btn-list .btn2:focus {
+.btn__list .btn__list-button:hover,
+.btn__list .btn__list-button:focus {
   color: var(--white-text-color);
   background-color: var(--activity-color);
 }
-.btn2:hover {
+.btn__list-button:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -723,7 +723,7 @@ img {
 }
 /* Проекти*/
 
-.project-list {
+.project__list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -731,7 +731,7 @@ img {
   gap: 30px;
   margin-bottom: 0;
 }
-.cards-item {
+.project__cards-item {
   background: var(--primary-background-color);
   border: 1px solid #eeeeee;
   padding-top: 20px;
@@ -739,7 +739,7 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
 }
-.project-name {
+.project__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -748,7 +748,7 @@ img {
   color: var(--primary-text-color);
   margin-bottom: 4px;
 }
-.project-item {
+.project__item {
   text-decoration: none;
   display: block;
   transition-property: box-shadow;
@@ -756,24 +756,24 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-item:hover,
-.project-item:focus {
+.project__item:hover,
+.project__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-type {
+.project__type {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 /* Оверлей */
-.cards-thumb {
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.overley {
+.project__overley {
   position: absolute;
   top: 0;
   left: 0;
@@ -786,13 +786,13 @@ img {
   background-color: var(--activity-color-rgba90);
   opacity: 0;
 }
-.project-item:hover .overley,
-.project-item:focus .overley {
+.project__item:hover .project__overley,
+.project__item:focus .project__overley {
   transform: translateY(0);
   opacity: 1;
 }
 
-.cards-description {
+.project__cards-description {
   font-size: 18px;
   line-height: 1.56;
   text-align: center;
